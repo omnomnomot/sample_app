@@ -1,0 +1,60 @@
+#book_wrap #book {
+  font-size: 135%;
+}
+
+#book_wrap #book .code {
+  font-size: 89%;
+}
+
+p {
+  cursor: context-menu;
+}
+
+p.clicked {
+  background-color: #fffacd;
+}
+
+.origin p {
+  cursor: default;
+}
+
+.origin {
+  padding: 10px 10px 0 10px;
+  border: 2px solid red;
+  margin-bottom: 20px;
+}
+
+body.book #sidebar #navtool .section .switcher .title {
+  padding-right: 2px !important;
+  margin-right: 5px;
+}
+
+
+body.book #sidebar #navtool .section .switcher.custom {
+  text-align: center;
+  margin-top: 7px;
+  padding-bottom: 6px;
+  border-bottom: none;
+}
+
+body.book #sidebar #navtool .section .switcher .switcher_link.title a {
+  color: white;
+}
+
+p.align-right {
+  text-align: right;
+}
+
+#book a.heading {
+  outline: none;
+}
+
+/*hack for this bug: http://support.mozilla.org/en-US/questions/882572*/
+@-moz-document url-prefix() {
+  body.book #content #book, body.book #content #book_bottom, body.book #content #book_top {
+    background: white;
+  }
+  body.book #content #book_bottom {
+    margin-bottom: 20px;
+  }
+}
