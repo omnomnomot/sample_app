@@ -26,7 +26,10 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
 
-gem 'rspec-rails', '2.13.1'
+gem "rspec-rails", '~> 2.14.0.rc1'
+gem 'faker', '1.1.2'
+gem 'will_paginate', '3.0.4'
+gem 'bootstrap-will_paginate', '0.0.9'
 
 group :test do
   gem 'selenium-webdriver', '2.35.1'
