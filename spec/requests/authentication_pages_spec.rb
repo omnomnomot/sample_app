@@ -53,6 +53,8 @@ describe "Authentication" do
         describe "visiting the user index" do
           before { visit users_path }
           it { should have_title('Sign in') }
+          it { should_not have_link('Profile',   href: user_path(user)) }
+          it { should_not have_link('Settings',  href: edit_user_path(user)) }
         end
       end
 
